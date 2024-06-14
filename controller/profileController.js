@@ -3,7 +3,7 @@ const db = require("../config/db");
 
 
 exports.profile = (req, res) => {
-  const { username, email,password } = req.user;
+  const { username} = req.user;
 
-  return res.status(200).send({username,email,password})
+  return res.status(200).send({username})
 };
